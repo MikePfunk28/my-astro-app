@@ -4,13 +4,60 @@ description: 'Lorem ipsum dolor sit amet'
 pubDate: 'Jul 08 2022'
 heroImage: '/blog-placeholder-3.jpg'
 ---
+# Advent of Code Day 2
+Using the debugger was big for part two as I wanted to do it differently.  
+Also, one issue I ran into was when parsing the input, I was trying to strip 
+and split the input into their own lists and then convert to integer.  However,
+because the last character in the input was a newline, that would be parsed 
+to an empty string, which I could not strip.  I could have used **rstrip** 
+and cut everything off before the new line and that would have been one way.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+## Possible other Solutions
+I might still use rstrip as as another way to do it.  One thing I noticed 
+while debugging was that the input was being broken up fine.  So I would take 
+in the text file and split it to a list of lines, then split that to be a list 
+of integers.  At first I wanted to just get it over with so I tried to just 
+use functions.  Eventually I made it a class and had to rework the logic a 
+bit, but it overall made it easier to read and understand.  When I did this 
+though I realized that I was setting the answer, so any calculation I did was 
+not being saved.  Then I also realized the logic wasn't working as it had 
+prior to making a class.  Even though I kept that logic the same, it was not 
+evaluating them correctly, instead they were all coming out as safe.  Prior 
+each time it had always realized when it was off the pattern.  I went through 
+the debugger and saw it myself.  However, when I evaluated the logic as a 
+class, it did not work, which allowed me to simplify it a bit.  I had also 
+then realized yes I was doing this the simply way, I could be using more 
+advanced functions.  However, I think this is the best way to understand what 
+is going on, as a lot of advanced functions do the heavy lifting for you.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+## Testing and Debugging
+I also have redundant logic solving the problem in two ways, essentially 
+checking myself.  As turning it into a variable makes it cleaner, but you 
+cannot use it everywhere.  I also have print statements which helps to 
+understand what is going on as well as debug it.  I think it will also 
+help anyone who wants to understand what I did, or anything.  The logic is 
+not difficult to understand, it is not hard to do, it takes planning and a 
+thought out process.  It's not complicated code or anything really, and if 
+you think about it, this is similar logic to what you do in any advanced 
+algorithm.  The types can be hard to understand when you are getting issues, 
+and it can be hard to think through, so using the debugger simplifies it.
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+## Final Thoughts
+I also had realized that I had read the problem wrong, originally I had it 
+set for 2 or less, and it was 3 or less.  So is gradually increasing or is 
+gradually decreasing.  I plan on working these through and refactoring the 
+code to be cleaner and more efficient.  I also plan on adding more comments 
+to the code, as I think it will help anyone who wants to understand what I 
+did, or anything.  I also left the print statements I used for debugging 
+like I said, and both methods arrive at the same answer.  Advent of Code 
+Day 2 2024 Done.
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+## Numpy
+I used numpy to turn the list into an array, and then I used numpy diff to 
+create a list of differences.  Once I had the list of differences, I could 
+compare to make sure they were all decreasing or increasing.  Numpy was much 
+easier obviously, but the logic works for both.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+### Link to GitHub repository:
+https://github.com/MikePfunk28/advent_of_code
+
