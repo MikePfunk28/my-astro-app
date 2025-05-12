@@ -1,16 +1,99 @@
 ---
-title: 'Third post'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 22 2022'
+title: 'Web Development'
+description: 'Building the MikePfunk Website'
+pubDate: 'May 11 2025'
 heroImage: '/blog-placeholder-2.jpg'
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+# Web Development
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+## Key Technologies and Tools
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+- **Vite:** Utilized as the build tool and development server for its fast build times and efficient hot module replacement.
+- **Three.js:** Implemented for rendering 3D models, enhancing the visual appeal with interactive graphics.
+- **Cloudflare Pages:** Deployed using Cloudflare Pages, providing a fast and secure hosting environment.
+- **Custom GPT Integration:** An AI-powered backend integrated for providing dynamic content and user interactions.
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+The **MikePfunk Website** is a single-page web application built with modern web development technologies.
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+---
+
+## Using Cloudflare Pages to Host This Site
+
+Cloudflare Pages is a great way to host a static site. It's free, fast, and easy to use.  
+I've been using it for a few months now and I'm very happy with it.  
+The only downside is that it doesn't support server-side rendering, so if you need that, you'll have to look elsewhere.
+
+---
+
+## Brief Explanation of Building MikePfunk Website
+
+The **MikePfunk Website** is a developer portfolio, structured to look like a hybrid developer website/personal portfolio site.  
+Built with modern web development technologies, it specifically leverages Vite for efficient build processes, Three.js for rendering 3D models, and Node.js.  
+The website is designed to provide engaging and interactive content, including blog posts and 3D visualizations.
+
+---
+
+### Project Setup
+
+- Initialized the project using Vite, configuring the necessary entry points for a multi-page application.
+- Structured the project directory to organize assets, scripts, styles, and HTML files effectively.
+
+### Design and Layout
+
+- Created responsive HTML templates and CSS stylesheets for consistent design across all pages.
+- Ensured the layout was user-friendly and accessible.
+
+### 3D Model Integration
+
+- Designed 3D models for logos and other interactive elements using Blender.
+- Exported models in GLTF format for web optimization.
+- Integrated Three.js to load and render these models on specific pages, providing interactive 3D visualizations.
+
+### Blog Functionality
+
+- Developed a JSON-driven blog post management system.
+- Created scripts to dynamically load and display blog posts based on a JSON configuration file.
+
+### AI Integration
+
+- Implemented a Cloudflare Worker to interact with a custom GPT model.
+- Set up an endpoint (e.g., `chatgpt.mikepfunk.com`) for AI-powered features, handling user inputs and providing dynamic responses.
+
+### Deployment and Optimization
+
+- Configured Vite to handle asset bundling and optimization, ensuring efficient load times.
+- Deployed the site on Cloudflare Pages, leveraging its global CDN for fast content delivery.
+- Implemented security measures, including appropriate CORS headers and referrer policies.
+
+### Testing and Debugging
+
+- Performed extensive testing across different browsers and devices to ensure compatibility and performance.
+- Debugged issues related to asset loading and script execution to ensure a smooth user experience.
+
+---
+
+## Notable Features
+
+- **Interactive 3D Models:**  
+  Enhanced visual appeal with 3D logos and other elements, providing an engaging user experience.
+
+- **Dynamic Blog Content:**  
+  Easily manageable blog system using JSON files for content updates.
+
+- **AI Integration:**  
+  Custom GPT model integration for interactive user queries and flashcards for studying AWS.
+
+---
+
+## Final Remarks
+
+The MikePfunk Website combines modern web technologies with innovative features to create an interactive and visually appealing platform.  
+Continuous updates and improvements ensure that the site remains functional, secure, and engaging for all users.
+
+I built this in order to learn web development, and probably will redo this in React.
+
+---
+
+**tags:** #javascript #webdev #development  
+**Author:** Michael Pfundt

@@ -1,7 +1,7 @@
 ---
-title: 'First post'
-description: 'Lorem ipsum dolor sit amet'
-pubDate: 'Jul 08 2022'
+title: 'Advent of Code Day 2 2024'
+description: 'Solving Advent of Code Day 2'
+pubDate: 'May 11 2025'
 heroImage: '/blog-placeholder-3.jpg'
 ---
 # Advent of Code Day 2
