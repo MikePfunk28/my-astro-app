@@ -2,7 +2,7 @@
 title: 'Advent of Code Day 2 2024'
 description: 'Solving Advent of Code Day 2'
 pubDate: 'May 11 2025'
-heroImage: '/blog-placeholder-3.jpg'
+heroImage: '/blog-placeholder-1.jpg'
 ---
 # Advent of Code Day 2
 Using the debugger was big for part two as I wanted to do it differently.  

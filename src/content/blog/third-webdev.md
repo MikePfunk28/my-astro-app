@@ -2,7 +2,7 @@
 title: 'Web Development'
 description: 'Building the MikePfunk Website'
 pubDate: 'May 11 2025'
-heroImage: '/blog-placeholder-2.jpg'
+heroImage: '/blog-placeholder-3.jpg'
 ---
 
 # Web Development

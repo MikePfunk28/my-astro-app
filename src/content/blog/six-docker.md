@@ -2,7 +2,7 @@
 title: 'Building Your Own Container Using Golang and Docker'
 description: 'Step-by-step guide to creating a simple containerized Go application and running it with Docker.'
 pubDate: '2024-01-02'
-heroImage: '/blog-placeholder-2.jpg'
+heroImage: '/blog-placeholder-5.jpg'
 ---
 
 # Building Your Own Container Using Golang and Docker

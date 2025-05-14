@@ -2,7 +2,7 @@
 title: 'Advent of Code and LeetCode Solutions'
 description: 'Reflections and solutions for Advent of Code and LeetCode challenges, including debugging tips and code structure.'
 pubDate: 'May 11 2025'
-heroImage: '/blog-placeholder-2.jpg'
+heroImage: '/blog-placeholder-5.jpg'
 ---
 
 # Advent of Code and LeetCode Solutions

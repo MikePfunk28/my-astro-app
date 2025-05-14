@@ -2,7 +2,7 @@
 title: 'Testing Locally before deploying to Production'
 description: 'Using Docker, LocalStack, and Terraform'
 pubDate: 'May 11 2025'
-heroImage: '/blog-placeholder-2.jpg'
+heroImage: '/blog-placeholder-4.jpg'
 ---
 
 # Creating a Virtual Cloud Environment Using LocalStack and Terraform

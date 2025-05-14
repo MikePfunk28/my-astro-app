@@ -2,7 +2,7 @@
 title: 'OpenAI GPT-3 and Prompt Engineering - Chain of Thought'
 description: 'Prompt Engineering with ChatGPT'
 pubDate: 'May 10 2025'
-heroImage: '/blog-placeholder-4.jpg'
+heroImage: '/blog-placeholder-2.jpg'
 ---
 
 # OpenAI GPT-3 and Prompt Engineering - Chain of Thought
