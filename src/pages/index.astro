@@ -3,6 +3,13 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { getCollection }   from 'astro:content';
+import FormattedDate       from '../components/FormattedDate.astro';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
 ---
 
 <!doctype html>
@@ -13,23 +20,31 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Welcome to my Blog!</h1>
+			<h1>Welcome to MikePfunk's Blog!</h1>
 			<p>
-				My site is using <a href="https://astro.build/">Astro</a> blog starter template. This
+				🧑‍🚀 My site is using <a href="https://astro.build/">Astro</a> blog starter template. This
 				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.  You can check out my website, 
+				a personal website, blog, or portfolio with Astro.  You can check out my website,
 				<a href="https://mikepfunk.com">here.</a>
 			</p>
 			<p>
-				You can setup a template like I did which incorporates your framework, 
-				 for me, this was cloudflare.  The <code>astro.config.mjs</code> file will
-				 contain the integrations you need.  Astro is simple, easy to setup and 
-				 straightforward to integrate with your current setup.  I noticed there is a 
-				 Model Context Protocol server for astro in it's 
+				You can setup a template like I did which incorporates your framework,
+				 for me, this was Cloudflare.  The <code>astro.config.mjs</code> file will
+				 contain the integrations you need.  Astro is simple, easy to setup and
+				 straightforward to integrate with your current setup.  I noticed there is a
+				 Model Context Protocol server for astro in it's
 				 <a href="https://astro.build/integrations">Integrations.</a>
 			</p>
 			<p>Here are a few blog posts to visit to get started with the template:</p>
 			<ul>
+				<!-- THIS LINE PULLS OUT THE NEWEST POST -->
+				{posts[0] && (
+					<li>
+					This is my latest post:
+					<a href={`/blog/${posts[0].id}/`}>{posts[0].data.title}</a>
+					{' '}— <FormattedDate date={posts[0].data.pubDate} />
+					</li>
+				)}
 				<li>Visit my first post here <code><a href="src/content/blog/first-aoc2">Advent of Code 2024 Day 2</a></li></code>
 				<li>Brief summary of Chain of Thought ChatGPT Prompt-Eng. <a href="/blog/second-prompt">Chain of Thought Prompting</a></li>
 				<li>Check out my blog on web development <a href="/blog/third-webdev">Web Development</a></li>
@@ -38,8 +53,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 				<li>Using Docker/Go and Terraform and Localstack <a href="/blog/six-docker">Creating your own container</a></li>
 			</ul>
 			<p>
+				Here is my <a href="https://blog.mikepfunk.com">Blog</a>,
 				Looking to network or chat, connect with me on LinkedIn
-				by <a href="https://linkedin.com/in/michael.pfundt">Mike</a>.
+				by clicking <a href="https://linkedin.com/in/michaelpfundt">Mike</a>.
 			</p>
 		</main>
 		<Footer />

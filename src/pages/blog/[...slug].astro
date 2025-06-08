@@ -14,6 +14,22 @@ type Props = CollectionEntry<'blog'>;
 
 const post = Astro.props;
 const { Content } = await render(post);
+
+// 1. grab every markdown post in src/content/blog
+const postModules = import.meta.glob('../content/blog/*.md', { eager: true });
+
+// 2. pull out frontmatter + slug
+const posts = Object.entries(postModules).map(([path, mod]) => {
+  const { frontmatter } = mod;
+  const slug = path.split('/').pop().replace(/\.md$/, '');
+  return { ...frontmatter, slug };
+});
+
+// 3. sort descending by date
+posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+// 4. pick the very newest
+const latest = posts[0] ?? { title: '', slug: '' };
 ---
 
 <BlogPost {...post.data}>

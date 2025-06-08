@@ -9,8 +9,8 @@ heroImage: '/blog-placeholder-5.jpg'
 
 ## Advent of Code and LeetCode Challenges
 
-**Advent of Code Day 1 2024:**  
-- The input is a list of numbers in a text file  
+**Advent of Code Day 1 2024:**
+- The input is a list of numbers in a text file
 - Solution implemented in Python: `aoc_day1.py`
 
 Both the built-in Python `sorted` method and a custom quicksort were used to solve the problem. The challenge itself was fairly straightforward, requiring just a bit of thought to reach the correct answer. Debugging tools and print statements proved invaluable for stepping through the code and observing variable values at each stage, making it much easier to identify and resolve issues.
