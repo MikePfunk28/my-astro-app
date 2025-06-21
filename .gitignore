@@ -27,3 +27,7 @@ pnpm-debug.log*
 .wrangler
 .dev.vars*
 *.zip
+.github/memory-bank/activeContext.md
+public/Mermaid Chart-2025-06-21-044440.svg
+.gitignore
+public/Mermaid Chart-2025-06-21-044537.png

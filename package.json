@@ -11,12 +11,15 @@
 		"cf-typegen": "wrangler types"
 	},
 	"dependencies": {
-		"@astrojs/cloudflare": "^12.5.4",
+		"@astrojs/cloudflare": "^12.6.0",
 		"@astrojs/mdx": "^4.3.0",
 		"@astrojs/rss": "^4.0.12",
 		"@astrojs/sitemap": "^3.4.1",
-		"astro": "^5.9.1",
-		"my-astro-app": "file:"
+		"astro": "^5.10.0",
+		"mermaid": "^11.7.0",
+		"my-astro-app": "file:",
+		"playwright": "^1.53.1",
+		"unist-util-visit": "^5.0.0"
 	},
 	"devDependencies": {
 		"@cloudflare/workers-types": "^4.20250504.0",
